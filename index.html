@@ -1,0 +1,48 @@
+---
+layout: default
+
+---
+
+<div class="landing-main">
+
+  <div class="landing-main-heading">
+    <div class="landing-main-heading-content">
+      <div class="landing-main-heading-content-title">{{ site.name }}</div>
+      <div class="landing-main-heading-content-context">
+        <p>{{ site.tagline }}</p>
+        <p>@{{ site.username }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-main-footing">
+
+    <div>
+      {% for link in site.data.nav %}
+        <div class="landing-main-footing-link">
+          <a
+            href="{{ link.href }}"
+            target="{{ link.target }}"
+          >
+            {{ link.title }}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div>
+      {% for link in site.data.contact %}
+        <div class="landing-main-footing-icon">
+          <a href="{{ link.href }}" target="_blank">
+            <img
+              src="{{ link.icon | prepend: '/static/assets/' | prepend: site.baseurl | replace: '//', '/' }}"
+              alt="{{ link.alt }}"
+            />
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>

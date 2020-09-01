@@ -1,0 +1,44 @@
+<header>
+
+  <div>
+
+    <div class="header-heading">
+      <a
+        href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"
+        class="header-heading-title"
+      >
+        {{ site.name }}
+      </a>
+      <div class="header-heading-context">
+        <p>{{ site.tagline }}</p>
+        <p>@{{ site.username }}</p>
+      </div>
+    </div>
+
+    <div class="header-nav">
+      {% for link in site.data.nav %}
+        <p>
+          <a
+            href="{{ link.href }}"
+            target="{{ link.target }}"
+          >
+            {{ link.title }}
+          </a>
+        </p>
+      {% endfor %}
+    </div>
+
+  </div>
+
+  <div class="header-contact">
+    {% for link in site.data.contact %}
+      <a href="{{ link.href }}" target="_blank">
+        <img
+          src="{{ link.icon | prepend: '/static/assets/' | prepend: site.baseurl | replace: '//', '/' }}"
+          alt="{{ link.alt }}"
+        />
+      </a>
+    {% endfor %}
+  </div>
+
+</header>

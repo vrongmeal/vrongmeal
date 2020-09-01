@@ -1,0 +1,23 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+
+---
+
+{% if site.blog.size == 0 %}
+  <p>
+    <em>There are no posts to show right now</em>
+  </p>
+{% else %}
+
+{% for post in site.blog reversed %}
+  <p>
+   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+      <strong>{{ post.title }}</strong>
+    </a>
+    <em class="blog-post-date">{{ post.date | date_to_string }}</em>
+  </p>
+{% endfor %}
+
+{% endif %}

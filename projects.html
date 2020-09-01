@@ -1,0 +1,25 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+
+---
+
+{% if site.projects.size == 0 %}
+  <p>
+    <em>There are no projects to show right now</em>
+  </p>
+{% else %}
+
+{% for post in site.projects reversed %}
+  <div>
+    <h3 class="project-title">
+      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+        {{ post.title }}
+      </a>
+    </h3>
+    <p>{{ project.description }}</p>
+  </div>
+{% endfor %}
+
+{% endif %}

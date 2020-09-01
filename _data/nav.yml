@@ -1,0 +1,9 @@
+- title: About
+  href: "/about/"
+- title: Projects
+  href: "/projects/"
+- title: Blog
+  href: "/blog/"
+- title: Resume
+  href: "/static/assets/resume.pdf"
+  target: _blank

@@ -1,0 +1,55 @@
+title: Vaibhav (@vrongmeal)
+name: Vaibhav
+tagline: Software Developer
+username: vrongmeal
+email: vrongmeal@gmail.com
+description: >-
+  About, Blog and Projects of Vaibhav, a.k.a., @vrongmeal
+
+baseurl: ""
+url: "//vrongmeal.co"
+
+markdown: kramdown
+kramdown:
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+collections:
+  blog:
+    output: true
+    permalink: "/blog/:slug:output_ext"
+  projects:
+    output: true
+    permalink: "/projects/:slug:output_ext"
+
+defaults:
+- scope:
+    path: ""
+    type: blog
+  values:
+    layout: page
+- scope:
+    path: ""
+    type: projects
+  values:
+    layout: page
+
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
+
+exclude:
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+- README.md
+- .git/
+- .gitignore
+- .github/
