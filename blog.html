@@ -13,10 +13,10 @@ permalink: /blog/
 
 {% for post in site.blog reversed %}
   <p>
-   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-      <strong>{{ post.title }}</strong>
-    </a>
-    <em class="blog-post-date">{{ post.date | date_to_string }}</em>
+    <a
+      href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"
+      ><strong>{{ post.title }}</strong></a>
+    <span class="blog-post-date blog-list-date">{{ post.date | date_to_string }}</span>
   </p>
 {% endfor %}
 
