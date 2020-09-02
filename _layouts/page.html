@@ -7,12 +7,29 @@ layout: default
 
 <div class="container">
 
+  <img
+    src="{{ '/static/assets/menu.svg' | prepend: site.baseurl | replace: '//', '/' }}"
+    class="menu-btn nozoom"
+  />
+
+  <div class="main-cover"></div>
+
   <main>
+
     <h1>
       {{ page.title }}
+      {% if page.layout == 'post' %}
+      <a class="anchor-heading" href="#">#</a>
+      {% endif %}
     </h1>
 
     {{ content }}
+
   </main>
 
 </div>
+
+<script
+  type="text/javascript"
+  src="{{ '/static/scripts/index.js' | prepend: site.baseurl | replace: '//', '/' }}"
+></script>

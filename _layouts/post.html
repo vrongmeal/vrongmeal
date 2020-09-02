@@ -1,20 +1,8 @@
 ---
-layout: default
+layout: page
 
 ---
 
-{% include header.html %}
+<p class="blog-post-date">Posted on {{ page.date | date_to_string }}</p>
 
-<div class="container">
-
-  <main>
-    <p class="blog-post-date">Posted on {{ page.date | date_to_string }}</p>
-    <h1>
-      {{ page.title }}
-      <a class="anchor-heading" href="{{ page.url | prepend: site.baseurl | replace: '//', '/' }}">#</a>
-    </h1>
-
-    {% include content.html html=content anchorBody="#" anchorClass="anchor-heading" %}
-  </main>
-
-</div>
+{% include content.html html=content anchorBody="#" anchorClass="anchor-heading" %}

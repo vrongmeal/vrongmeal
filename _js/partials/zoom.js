@@ -1,5 +1,5 @@
 import mediumZoom from "medium-zoom";
 
 export default () => {
-  mediumZoom("main img");
+  mediumZoom("main img:not(.nozoom)");
 };

@@ -31,9 +31,3 @@ blog/portfolio.
    $ npm run build
    $ bundle exec jekyll build
    ```
-
-## ToDo
-
-- [ ] Responsive
-- [x] Heading links
-- [x] Image magnify

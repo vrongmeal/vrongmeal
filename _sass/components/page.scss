@@ -7,6 +7,7 @@
 }
 
 $header-width: 20rem;
+$small-header-width: calc(100% - 4rem);
 
 //
 // Header
@@ -15,9 +16,7 @@ $header-width: 20rem;
 header {
   width:  $header-width;
   height: 100%;
-}
 
-header {
   position: fixed;
   top:      0;
   left:     0;
@@ -26,7 +25,23 @@ header {
   flex-direction:  column;
   justify-content: space-between;
 
+  z-index: 100;
+
   overflow: hidden;
+
+  @media only screen and (max-width: 1072px) {
+    left: -100%;
+
+    transition: left 500ms;
+
+    &.active {
+      left: 0;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    width: $small-header-width;
+  }
 }
 
   .header-heading {
@@ -54,10 +69,10 @@ header {
   .header-nav {
     margin-top: 4rem;
     width:      100%;
-    padding:    0 5rem;
 
     p {
       line-height: 2.5;
+      text-align:  center;
     }
   }
 
@@ -89,6 +104,33 @@ header {
 // Main
 //
 
+.main-cover {
+  display: none;
+  opacity: 0;
+
+  height: 100%;
+  width:  100%;
+
+  background-color: var(--background-color);
+
+  backdrop-filter: blur(5px);
+
+  top: 0;
+  left: 0;
+
+  position: fixed;
+  z-index:  99;
+
+  @media only screen and (max-width: 1072px) {
+    transition: opacity 500ms;
+
+    &.active {
+      display: block;
+      opacity: 0.75;
+    }
+  }
+}
+
 main {
   width: calc(100% - #{$header-width});
 
@@ -96,6 +138,19 @@ main {
   padding-left: 5rem + $header-width;
 
   overflow-x: hidden;
+
+  @media only screen and (max-width: 1072px) {
+    width: 100%;
+
+    padding-left: 5rem;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding: {
+      left:  3.5rem;
+      right: 2rem;
+    }
+  }
 
   @extend .markdown;
 }
@@ -119,4 +174,41 @@ main {
 
 .project-title {
   margin-bottom: 0.25rem;
+}
+
+//
+// Menu
+//
+
+.menu-btn {
+  display: none;
+
+  height: 2rem;
+  width:  2rem;
+
+  position: fixed;
+  top:      3.5rem;
+  left:     1.5rem;
+
+  z-index: 100;
+
+  cursor: pointer;
+
+  @media only screen and (max-width: 1072px) {
+    display: inline-block;
+
+    transition: left 500ms;
+
+    &.active {
+      left: 1.5rem + $header-width;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    left: 1rem;
+
+    &.active {
+      left: $small-header-width;
+    }
+  }
 }
