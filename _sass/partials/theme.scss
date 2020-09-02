@@ -36,3 +36,11 @@ a {
     outline: dotted;
   }
 }
+
+.medium-zoom-overlay {
+  z-index: 101;
+}
+
+.medium-zoom-image {
+  z-index: 102;
+}
