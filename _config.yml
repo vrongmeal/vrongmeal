@@ -29,12 +29,12 @@ defaults:
     path: ""
     type: blog
   values:
-    layout: page
+    layout: post
 - scope:
     path: ""
     type: projects
   values:
-    layout: page
+    layout: post
 
 plugins:
 - jekyll-feed
