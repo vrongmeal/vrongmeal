@@ -35,5 +35,5 @@ blog/portfolio.
 ## ToDo
 
 - [ ] Responsive
-- [ ] Heading links
+- [x] Heading links
 - [x] Image magnify

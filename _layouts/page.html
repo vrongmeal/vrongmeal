@@ -8,9 +8,15 @@ layout: default
 <div class="container">
 
   <main>
-    <h1>{{ page.title }}</h1>
+    <p>
+      <em>Posted on {{ page.date | date_to_string }}</em>
+    </p>
+    <h1>
+      {{ page.title }}
+      <a class="anchor-heading" href="{{ page.url | prepend: site.baseurl | replace: '//', '/' }}">#</a>
+    </h1>
 
-    {{ content }}
+    {% include content.html html=content anchorBody="#" anchorClass="anchor-heading" %}
   </main>
 
 </div>
