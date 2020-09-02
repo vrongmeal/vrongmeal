@@ -7,6 +7,11 @@
 
     {{ content }}
 
+    <script
+      type="text/javascript"
+      src="{{ '/static/scripts/index.js' | prepend: site.baseurl | replace: '//', '/' }}"
+    ></script>
+
   </body>
 
 </html>

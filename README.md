@@ -22,26 +22,15 @@ blog/portfolio.
 
    ```sh
    $ bundle install
+   $ npm install
    ```
 
 3. Build the site into `./_site`.
 
    ```sh
+   $ npm run build
    $ bundle exec jekyll build
    ```
-
-### Development
-
-Use the build command with either `--watch` flag or use the serve command
-to spawn a server.
-
-```sh
-# Watches for changes
-$ bundle exec jekyll build --watch
-
-# Spawns a server on port :4000 along-with watch
-$ bundle exec jekyll serve
-```
 
 ## ToDo
 
