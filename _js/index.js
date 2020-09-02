@@ -1,12 +1,3 @@
-import transition from "./partials/transition.js";
-import zoom from "./partials/zoom.js";
-import $ from "jquery";
+import zoom from "./partials/zoom";
 
-$("main img").each(function() {
-  if( $(this).attr("class") !== "nozoom" ) {
-    this.setAttribute("data-action", "zoom");
-  }
-});
-
-transition();
 zoom();
