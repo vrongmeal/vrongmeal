@@ -36,4 +36,4 @@ blog/portfolio.
 
 - [ ] Responsive
 - [ ] Heading links
-- [ ] Image magnify
+- [x] Image magnify

@@ -12,7 +12,7 @@ $header-width: 20rem;
 // Header
 //
 
-header, .header-cover {
+header {
   width:  $header-width;
   height: 100%;
 }
@@ -92,7 +92,8 @@ header {
 main {
   width: calc(100% - #{$header-width});
 
-  padding: 3rem 5rem;
+  padding:      3rem 5rem;
+  padding-left: 5rem + $header-width;
 
   overflow-x: hidden;
 
