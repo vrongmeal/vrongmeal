@@ -34,6 +34,8 @@ header {
 
     transition: left 500ms;
 
+    background-color: rgba(255, 255, 255, 0.6);
+
     &.active {
       left: 0;
     }
@@ -48,6 +50,10 @@ header {
     width:      100%;
     text-align: center;
     margin-top: 3rem;
+
+    @media only screen and (max-width: 480px) {
+      margin-top: 2rem;
+    }
   }
 
     .header-heading-title {
@@ -85,6 +91,10 @@ header {
     align-items:     center;
     justify-content: center;
 
+    @media only screen and (max-width: 480px) {
+      margin-bottom: 2rem;
+    }
+
     a {
       display:     block;
       margin-left: 1rem;
@@ -97,6 +107,11 @@ header {
     img {
       height: 1.2rem;
       width:  1.2rem;
+
+      @media only screen and (max-width: 480px) {
+        height: 1.5rem;
+        width:  1.5rem;
+      }
     }
   }
 
@@ -147,8 +162,10 @@ main {
 
   @media only screen and (max-width: 480px) {
     padding: {
-      left:  3.5rem;
-      right: 2rem;
+      top:    1rem;
+      bottom: 1rem;
+      left:   3.5rem;
+      right:  1rem;
     }
   }
 
@@ -200,15 +217,16 @@ main {
     transition: left 500ms;
 
     &.active {
-      left: 1.5rem + $header-width;
+      left: 2rem + $header-width;
     }
   }
 
   @media only screen and (max-width: 480px) {
+    top:  1.5rem;
     left: 1rem;
 
     &.active {
-      left: 1.5rem + $small-header-width;
+      left: 2rem + $small-header-width;
     }
   }
 }
