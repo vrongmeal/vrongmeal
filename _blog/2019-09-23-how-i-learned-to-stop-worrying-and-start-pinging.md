@@ -35,7 +35,7 @@ A page might contain some (and not all checks created by the user). A user might
 
 The diagram below illustrates the schema of the Database.
 
-![Status Schema]({{ '/static/blog/how-i-learned-to-stop-worrying-and-start-pinging-status-schema.png' | prepend: site.baseurl | replace: '//', '/' }})
+![Status Schema]({{ '/static/blog/how-i-learned-to-stop-worrying-and-start-pinging-status-schema.jpg' | prepend: site.baseurl | replace: '//', '/' }})
 
 The biggest challenge in making the app was implementing how the checks would work. Since a user can request to check for uptime every 30 seconds, assuming a large scale, it’s unreasonable to expect one server to handle everything correctly. So we wanted the app to be scalable over multiple servers.
 
@@ -49,7 +49,7 @@ Finally, we needed to manage the lifecycle of the workers. It’s relatively com
 
 Due to a limited number of resources, first, we’re going to release a version without the described Kubernetes architecture. For the initial release, we’re aiming at an app which can spawn and manage workers on a single server.
 
-![Master-Worker]({{ '/static/blog/how-i-learned-to-stop-worrying-and-start-pinging-master-worker.png' | prepend: site.baseurl | replace: '//', '/' }})
+![Master-Worker]({{ '/static/blog/how-i-learned-to-stop-worrying-and-start-pinging-master-worker.jpg' | prepend: site.baseurl | replace: '//', '/' }})
 
 ### Tech Stack
 
