@@ -1,18 +1,12 @@
-- alt: Email (vrongmeal@gmail.com)
-  icon: "email.png"
+- icon: "email-icon.svg"
   href: mailto:vrongmeal@gmail.com
-- alt: Github (@vrongmeal)
-  icon: "github.png"
+- icon: "github-icon.svg"
   href: https://github.com/vrongmeal
-- alt: Twitter (@vrongmeal)
-  icon: "twitter.png"
+- icon: "twitter-icon.svg"
   href: https://twitter.com/vrongmeal
-- alt: LinkedIn (Vaibhav VR)
-  icon: "linkedin.png"
+- icon: "linkedin-icon.svg"
   href: https://www.linkedin.com/in/vrongmeal/
-- alt: Facebook (Vaibhav VR)
-  icon: "facebook.png"
+- icon: "facebook-icon.svg"
   href: https://www.facebook.com/vrongmeal
-- alt: Instagram (@vrongmeal)
-  icon: "instagram.png"
+- icon: "instagram-icon.svg"
   href: https://www.instagram.com/vrongmeal/

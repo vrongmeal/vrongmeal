@@ -1,0 +1,13 @@
+exclude:
+- .git/
+- node_modules/
+- _site/
+- .cache/
+- .jekyll-cache/
+
+filters:
+- '- static/scripts/index.js'
+
+exec:
+- npm run build
+- bundle exec jekyll serve --no-watch

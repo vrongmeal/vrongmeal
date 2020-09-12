@@ -33,10 +33,9 @@
   <div class="header-contact">
     {% for link in site.data.contact %}
       <a href="{{ link.href }}" target="_blank">
-        <img
-          src="{{ link.icon | prepend: '/static/assets/' | prepend: site.baseurl | replace: '//', '/' }}"
-          alt="{{ link.alt }}"
-        />
+        <div class="img">
+          {% include svg/{{ link.icon }} %}
+        </div>
       </a>
     {% endfor %}
   </div>

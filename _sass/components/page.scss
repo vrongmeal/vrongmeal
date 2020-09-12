@@ -34,7 +34,7 @@ header {
 
     transition: left 500ms;
 
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(var(--overlay-color), 0.6);
 
     &.active {
       left: 0;
@@ -104,7 +104,7 @@ header {
       }
     }
 
-    img {
+    .img {
       height: 1.2rem;
       width:  1.2rem;
 
@@ -121,12 +121,11 @@ header {
 
 .main-cover {
   display: none;
-  opacity: 0;
 
   height: 100%;
   width:  100%;
 
-  background-color: var(--background-color);
+  background-color: rgba(var(--overlay-color), 0);
 
   backdrop-filter: blur(5px);
 
@@ -137,11 +136,11 @@ header {
   z-index:  99;
 
   @media only screen and (max-width: 1072px) {
-    transition: opacity 500ms;
+    transition: background-color 500ms;
 
     &.active {
       display: block;
-      opacity: 0.75;
+      background-color: rgba(var(--overlay-color), 0.35);
     }
   }
 }
@@ -210,6 +209,8 @@ main {
   z-index: 100;
 
   cursor: pointer;
+
+  color: var(--primary-color);
 
   @media only screen and (max-width: 1072px) {
     display: inline-block;
