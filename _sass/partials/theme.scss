@@ -6,6 +6,8 @@ $monospace-font: "JetBrains Mono", monospace;
   font-size:   $base-font-size;
   font-family: $default-font;
 
+  font-variant-ligatures: none;
+
   --primary-color:      #111111;
   --secondary-color:    #666666;
   --font-color:         #272727;
@@ -54,7 +56,7 @@ svg {
 .medium-zoom-overlay {
   z-index: 101;
 
-  background-color: rgba(var(--overlay-color), 0.75) !important;
+  background-color: rgba(var(--overlay-color), 0.6) !important;
   backdrop-filter:  blur(5px);
 }
 
