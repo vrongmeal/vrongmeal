@@ -5,21 +5,23 @@ permalink: /projects/
 
 ---
 
-{% if site.projects.size == 0 %}
+{% unless site.data.projects.size %}
   <p>
     <em>There are no projects to show right now</em>
   </p>
 {% else %}
 
-{% for post in site.projects reversed %}
-  <div>
-    <h3 class="project-title">
-      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-        {{ post.title }}
-      </a>
+{% for project in site.data.projects reversed %}
+  <a
+    href="{{ project.url }}"
+    class="list-item"
+    {% if project.target %}target="{{ project.target }}"{% endif %}
+  >
+    <h3 class="list-title">
+      {{ project.title }}
     </h3>
-    <p>{{ post.description }}</p>
-  </div>
+    <div class="list-description">{{ project.description }}</div>
+  </a>
 {% endfor %}
 
-{% endif %}
+{% endunless %}

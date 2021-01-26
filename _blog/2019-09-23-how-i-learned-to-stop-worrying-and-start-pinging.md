@@ -1,5 +1,8 @@
 ---
 title: How I learned to stop worrying and start pinging
+description: |
+  During an internal hackathon at SDSLabs, we decided to make an uptime and
+  status monitoring application.
 
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: UST Global Hackathon (d3code) 2019
+description: We won the d3code 2019 Hackthon!
 
 ---
 
