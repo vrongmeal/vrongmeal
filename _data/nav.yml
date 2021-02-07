@@ -1,9 +1,9 @@
 - title: About
-  href: "/about/"
+  href: "about/"
 - title: Projects
-  href: "/projects/"
+  href: "projects/"
 - title: Blog
-  href: "/blog/"
+  href: "blog/"
 - title: Resume
-  href: "/static/assets/resume.pdf"
+  href: "static/assets/resume.pdf"
   target: _blank
