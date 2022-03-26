@@ -19,7 +19,6 @@
   "homepage": "https://github.com/vrongmeal/vrongmeal.github.io#readme",
   "devDependencies": {
     "medium-zoom": "^1.0.6",
-    "parcel-bundler": "^1.12.4"
-  },
-  "dependencies": {}
+    "parcel-bundler": "^1.3.1"
+  }
 }
