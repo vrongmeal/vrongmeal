@@ -173,6 +173,17 @@ main {
   @extend .markdown;
 }
 
+  .main-container {
+    min-width: calc(1072px - #{$header-width} - 5rem - 5rem); // 5 rems for left-right padding
+    max-width: 1072px;
+
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1072px) {
+      width: 100%;
+    }
+  }
+
 //
 // List page
 //

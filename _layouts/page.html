@@ -15,14 +15,18 @@ layout: default
 
   <main>
 
-    <h1>
-      {{ page.title }}
-      {% if page.layout == 'post' %}
-      <a class="anchor-heading" href="#">#</a>
-      {% endif %}
-    </h1>
+    <div class="main-container">
 
-    {{ content }}
+      <h1>
+        {{ page.title }}
+        {% if page.layout == 'post' %}
+        <a class="anchor-heading" href="#">#</a>
+        {% endif %}
+      </h1>
+
+      {{ content }}
+
+    </div>
 
   </main>
 
