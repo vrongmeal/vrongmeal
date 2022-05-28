@@ -1,0 +1,43 @@
+<head>
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }} - {{ site.description | strip }}
+    {% endif %}
+  </title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  {% capture meta_content %}
+    {% if page.description %}
+      {{ page.title }}: {{ page.description | strip }} | {{ site.title }}
+    {% elsif page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }} – {{ site.description | strip }}
+    {% endif %}
+  {% endcapture %}
+  <meta name="description" content="{{ meta_content | strip }}" />
+
+  <link
+    rel="stylesheet"
+    href="{{ '/static/styles/main.css' | prepend: site.baseurl | replace: '//', '/' }}"
+  />
+
+  <link
+    rel="shortcut icon"
+    href="{{ '/static/assets/favicon.ico' | prepend: site.baseurl | replace: '//', '/' }}"
+    type="image/x-icon"
+  />
+
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="{{ site.title }}"
+    href="{{ '/feed.xml' | prepend: site.baseurl | replace: '//', '/' }}"
+  />
+
+</head>

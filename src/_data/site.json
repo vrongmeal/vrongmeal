@@ -1,0 +1,63 @@
+{
+  "title": "Vaibhav (@vrongmeal)",
+  "name": "Vaibhav",
+  "tagline": "Software Developer",
+  "username": "vrongmeal",
+  "email": "vrongmeal@gmail.com",
+  "description": "About, Blog and Projects of Vaibhav, a.k.a., @vrongmeal",
+  "data": {
+    "nav": [
+      {
+        "title": "About",
+        "href": "/about/"
+      },
+      {
+        "title": "Projects",
+        "href": "/projects/"
+      },
+      {
+        "title": "Blog",
+        "href": "/blog/"
+      },
+      {
+        "title": "Resume",
+        "href": "/static/assets/resume.pdf",
+        "target": "_blank"
+      }
+    ],
+    "contact": [
+      {
+        "icon": "email-icon.svg",
+        "href": "mailto:vrongmeal@gmail.com"
+      },
+      {
+        "icon": "github-icon.svg",
+        "href": "https://github.com/vrongmeal"
+      },
+      {
+        "icon": "twitter-icon.svg",
+        "href": "https://twitter.com/vrongmeal"
+      },
+      {
+        "icon": "linkedin-icon.svg",
+        "href": "https://www.linkedin.com/in/vrongmeal/"
+      },
+      {
+        "icon": "facebook-icon.svg",
+        "href": "https://www.facebook.com/vrongmeal"
+      },
+      {
+        "icon": "instagram-icon.svg",
+        "href": "https://www.instagram.com/vrongmeal/"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Leaf",
+        "url": "https://github.com/vrongmeal/leaf",
+        "description": "General purpose reloader for all projects.\n",
+        "target": "_blank"
+      }
+    ]
+  }
+}

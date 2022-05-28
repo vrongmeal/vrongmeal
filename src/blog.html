@@ -1,0 +1,24 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+
+---
+
+{% if collections.blog.size == 0 %}
+  <p>
+    <em>There are no posts to show right now</em>
+  </p>
+{% else %}
+
+{% for post in collections.blog %}
+  <a class="list-item" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h3 class="list-title">
+      {{ post.data.title }}
+      <span class="blog-post-date list-blog-date">{{ post.date | date: '%d %b, %Y' }}</span>
+    </h3>
+    <div class="list-description">{{ post.data.description }}</div>
+  </a>
+{% endfor %}
+
+{% endif %}

@@ -1,0 +1,30 @@
+{
+  "name": "vrongmeal.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:eleventy & npm run start:webpack",
+    "start:eleventy": "eleventy --serve",
+    "start:webpack": "webpack --mode development --watch",
+    "build": "npm run build:webpack && npm run build:eleventy",
+    "build:eleventy": "ELEVENTY_PRODUCTION=true eleventy",
+    "build:webpack": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "file-loader": "^6.2.0",
+    "medium-zoom": "^1.0.6",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}

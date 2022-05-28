@@ -1,0 +1,11 @@
+# Build
+_site/
+
+# Node modules
+node_modules/
+
+# Generated JS and CSS
+static/scripts/*
+!static/scripts/.gitkeep
+static/styles/*
+!static/styles/.gitkeep

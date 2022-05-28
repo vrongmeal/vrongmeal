@@ -1,0 +1,4 @@
+# Webpack will build these for us if required hence no need for eleventy watch
+# these and care for their build.
+src/_js/
+src/_sass/

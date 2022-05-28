@@ -1,0 +1,35 @@
+---
+layout: default
+
+---
+
+{% include 'header.html' %}
+
+<div class="container">
+
+  <div class="menu-btn nozoom">
+    {% include 'svg/menu.svg' %}
+  </div>
+
+  <div class="main-cover"></div>
+
+  <main>
+
+    <div class="main-container">
+
+      <h1>
+        {{ title }}
+      </h1>
+
+      {{ content }}
+
+    </div>
+
+  </main>
+
+</div>
+
+<script
+  type="text/javascript"
+  src="{{ '/static/scripts/index.js' | prepend: site.baseurl | replace: '//', '/' }}"
+></script>

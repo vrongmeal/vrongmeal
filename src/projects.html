@@ -1,0 +1,27 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+
+---
+
+{% unless site.data.projects.size %}
+  <p>
+    <em>There are no projects to show right now</em>
+  </p>
+{% else %}
+
+{% for project in site.data.projects reversed %}
+  <a
+    href="{{ project.url }}"
+    class="list-item"
+    {% if project.target %}target="{{ project.target }}"{% endif %}
+  >
+    <h3 class="list-title">
+      {{ project.title }}
+    </h3>
+    <div class="list-description">{{ project.description }}</div>
+  </a>
+{% endfor %}
+
+{% endunless %}
