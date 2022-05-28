@@ -8,7 +8,7 @@ module.exports = function(conf) {
 
   conf.addPassthroughCopy("CNAME");
   conf.addPassthroughCopy("utterances.json");
-  conf.addPassthroughCopy("/static");
+  conf.addPassthroughCopy("static");
 
   conf.addCollection("blog", function(coll) {
     return coll.getFilteredByGlob(inputDir + "/_blog/*.md").reverse();
