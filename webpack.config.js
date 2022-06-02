@@ -23,7 +23,7 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: { outputPath: '../styles/', name: 'main.css' }
+            options: { outputPath: '.', name: 'main.min.css' }
           },
           {
             loader: 'sass-loader',
@@ -38,7 +38,9 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, 'static/scripts/'),
-    filename: 'index.js'
+    // Build the javascript (and css) directly into the _site directory so
+    // webpack and eleventy can work independent of each other.
+    path: path.resolve(__dirname, '_site/webpack/'),
+    filename: 'index.min.js'
   }
 };
