@@ -73,9 +73,9 @@ The meaning of the PACELC theorem is understood when expanding the
 abbreviation:
 
 In the case of a **network partition (P)** in a stateful distributed system,
-one has to choose between **availability (A)** and **consistency (C)**, but
+one has to choose between **availability (A)** and **consistency \(C)**, but
 **else (E)**, in the absence of partitions, one has to choose between **lower
-latency (L)** and **consistency (C).**
+latency (L)** and **consistency \(C).**
 
 The first part of the theorem (PAC) is precisely the CAP theorem but is more
 explicit. The second part (ELC) introduces a new term – **latency.** Latency is

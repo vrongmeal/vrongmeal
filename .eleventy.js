@@ -4,11 +4,17 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
 
+const rss = require("@11ty/eleventy-plugin-rss");
+
 const inputDir = "src";
 
 module.exports = function(conf) {
   // Enable syntax highlighting
   conf.addPlugin(syntaxHighlight);
+  conf.addLiquidFilter("dateToRfc3339", rss.dateToRfc3339);
+
+  // Enable RSS feed
+  conf.addPlugin(rss);
 
   conf.addPassthroughCopy("CNAME");
   conf.addPassthroughCopy("utterances.json");
