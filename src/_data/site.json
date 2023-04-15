@@ -1,10 +1,11 @@
 {
-  "title": "Vaibhav (@vrongmeal)",
-  "name": "Vaibhav",
+  "title": "Vaibhav Rabber (@vrongmeal)",
+  "name": "Vaibhav Rabber",
   "tagline": "Software Developer",
   "username": "vrongmeal",
   "email": "vrongmeal@gmail.com",
-  "description": "About, Blog and Projects of Vaibhav, a.k.a., @vrongmeal",
+  "description": "About, Blog and more.",
+  "footer": "© 2023 Vaibhav Rabber",
   "data": {
     "nav": [
       {

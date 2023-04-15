@@ -1,6 +1,7 @@
 $base-font-size: 16px;
-$default-font:   "Poppins", sans-serif;
-$monospace-font: "JetBrains Mono", monospace;
+// Other considered fonts - "Heebo", "Work Sans", "Poppins",
+$default-font:   Hind, sans-serif;
+$monospace-font: Cousine, monospace;
 
 :root {
   font-size:   $base-font-size;
@@ -8,21 +9,21 @@ $monospace-font: "JetBrains Mono", monospace;
 
   font-variant-ligatures: none;
 
-  --primary-color:      #111111;
+  --primary-color:      #337d88;
   --secondary-color:    #666666;
   --font-color:         #272727;
   --background-color:   #FDFDFD;
-  --secondary-bg-color: #E0E0E0;
-  --overlay-color:      255, 255, 255;
+  --secondary-bg-color: #E9E9E9;
+  --overlay-color:      0, 0, 0;
 
-  @media (prefers-color-scheme: dark) {
-    --primary-color:      #EEEEEE;
-    --secondary-color:    #999999;
-    --font-color:         #D8D8D8;
-    --background-color:   #020202;
-    --secondary-bg-color: #1F1F1F;
-    --overlay-color:      0, 0, 0;
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   --primary-color:      #EEEEEE;
+  //   --secondary-color:    #999999;
+  //   --font-color:         #D8D8D8;
+  //   --background-color:   #020202;
+  //   --secondary-bg-color: #1F1F1F;
+  //   --overlay-color:      0, 0, 0;
+  // }
 }
 
 html, body {
@@ -56,7 +57,7 @@ svg {
 .medium-zoom-overlay {
   z-index: 101;
 
-  background-color: rgba(var(--overlay-color), 0.6) !important;
+  background-color: rgba(var(--overlay-color), 0.7) !important;
   backdrop-filter:  blur(5px);
 }
 

@@ -5,6 +5,14 @@
 
   width:  100%;
   height: 100%;
+
+  box-sizing: border-box;
+
+  border: 1.5rem solid var(--primary-color);
+
+  @media only screen and (max-width: 720px) {
+    border-width: 2vw;
+  }
 }
 
   $landing-main-footing-height: 7rem;
@@ -29,12 +37,16 @@
         font-size:   10rem;
         font-weight: bold;
 
-        color: var(--primary-color);
-
         @media only screen and (max-width: 720px) {
           font-size: 20vw;
         }
       }
+
+        .landing-main-heading-content-title-word {
+          &::first-letter {
+            color: var(--primary-color);
+          }
+        }
 
       .landing-main-heading-content-context {
         color: var(--secondary-color);
@@ -66,19 +78,8 @@
 
       margin-left: 1rem;
 
-      &::before {
-        content: "|";
-
-        text-decoration: none;
-        margin-right:    1rem;
-      }
-
       &:first-child {
         margin-left: 0;
-
-        &::before {
-          content: none;
-        }
       }
     }
 

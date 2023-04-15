@@ -7,7 +7,12 @@ layout: default
 
   <div class="landing-main-heading">
     <div class="landing-main-heading-content">
-      <div class="landing-main-heading-content-title">{{ site.name }}</div>
+      <div class="landing-main-heading-content-title">
+        {% assign title_words = site.name | split: " " %}
+        {% for word in title_words %}
+          <div class="landing-main-heading-content-title-word">{{ word }}</div>
+        {% endfor %}
+      </div>
       <div class="landing-main-heading-content-context">
         <p>{{ site.tagline }}</p>
         <p>@{{ site.username }}</p>

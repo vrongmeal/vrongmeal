@@ -1,9 +1,5 @@
-@font-face {
-  font-family: "JetBrains Mono";
-  src:         url("/static/fonts/JetBrainsMono/woff2/JetBrainsMono-Regular.woff2") format("woff2"),
-               url("/static/fonts/JetBrainsMono/woff/JetBrainsMono-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style:  normal;
-}
+// "Hind" - Main font
+@import url('https://fonts.googleapis.com/css2?family=Hind:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// "Cousine" - Code font
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');

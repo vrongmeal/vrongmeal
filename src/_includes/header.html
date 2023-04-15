@@ -1,43 +1,46 @@
 <header>
 
-  <div>
+  <div class="header-container">
 
-    <div class="header-heading">
-      <a
-        href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"
-        class="header-heading-title"
-      >
-        {{ site.name }}
-      </a>
-      <div class="header-heading-context">
-        <p>{{ site.tagline }}</p>
-        <p>@{{ site.username }}</p>
-      </div>
-    </div>
+    <a
+      class="header-heading"
+      href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"
+    >
+      {% assign title_words = site.name | split: " " %}
+      {% for word in title_words %}
+        <div class="header-heading-title">{{ word }}</div>
+      {% endfor %}
+    </a>
 
     <div class="header-nav">
-      {% for link in site.data.nav %}
-        <p>
-          <a
-            href="{{ link.href }}"
-            target="{{ link.target }}"
-          >
-            {{ link.title }}
-          </a>
-        </p>
-      {% endfor %}
+
+      <ul class="header-nav-items">
+        {% for link in site.data.nav %}
+          <li>
+            <a
+              href="{{ link.href }}"
+              target="{{ link.target }}"
+            >
+              {{ link.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="header-contact">
+        {% for link in site.data.contact %}
+          <li>
+            <a href="{{ link.href }}" target="_blank">
+              <div class="img">
+                {% include 'svg/{{ link.icon }}' %}
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
     </div>
 
-  </div>
-
-  <div class="header-contact">
-    {% for link in site.data.contact %}
-      <a href="{{ link.href }}" target="_blank">
-        <div class="img">
-          {% include 'svg/{{ link.icon }}' %}
-        </div>
-      </a>
-    {% endfor %}
   </div>
 
 </header>

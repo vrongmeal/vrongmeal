@@ -1,8 +1,8 @@
 <head>
 
   <title>
-    {% if page.title %}
-      {{ page.title }} | {{ site.title }}
+    {% if title %}
+      {{ title }} | {{ site.title }}
     {% else %}
       {{ site.title }} - {{ site.description | strip }}
     {% endif %}
@@ -12,10 +12,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   {% capture meta_content %}
-    {% if page.description %}
-      {{ page.title }}: {{ page.description | strip }} | {{ site.title }}
-    {% elsif page.title %}
-      {{ page.title }} | {{ site.title }}
+    {% if description %}
+      {{ title }}: {{ description | strip }} | {{ site.title }}
+    {% elsif title %}
+      {{ title }} | {{ site.title }}
     {% else %}
       {{ site.title }} – {{ site.description | strip }}
     {% endif %}

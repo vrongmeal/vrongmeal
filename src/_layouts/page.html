@@ -5,31 +5,23 @@ layout: default
 
 {% include 'header.html' %}
 
-<div class="container">
+<main>
 
-  <div class="menu-btn nozoom">
-    {% include 'svg/menu.svg' %}
+  <div class="main-container">
+
+    <h1>
+      <a class="header-anchor" href="#">
+        <span>{{ title }}</span>
+      </a>
+    </h1>
+
+    {{ content }}
+
   </div>
 
-  <div class="main-cover"></div>
+</main>
 
-  <main>
-
-    <div class="main-container">
-
-      <h1>
-        <a class="header-anchor" href="#">
-          <span>{{ title }}</span>
-        </a>
-      </h1>
-
-      {{ content }}
-
-    </div>
-
-  </main>
-
-</div>
+<footer>{{ site.footer }}</footer>
 
 <script
   type="text/javascript"
