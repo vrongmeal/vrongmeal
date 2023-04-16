@@ -1,5 +1,3 @@
-import zoom from "./partials/zoom";
-import header from "./components/header";
+import zoom from "./zoom";
 
 zoom();
-header();
