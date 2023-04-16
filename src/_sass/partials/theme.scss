@@ -9,21 +9,19 @@ $monospace-font: Cousine, monospace;
 
   font-variant-ligatures: none;
 
-  --primary-color:      #337d88;
+  --primary-color:      #337D88;
   --secondary-color:    #666666;
   --font-color:         #272727;
   --background-color:   #FDFDFD;
   --secondary-bg-color: #E9E9E9;
   --overlay-color:      0, 0, 0;
 
-  // @media (prefers-color-scheme: dark) {
-  //   --primary-color:      #EEEEEE;
-  //   --secondary-color:    #999999;
-  //   --font-color:         #D8D8D8;
-  //   --background-color:   #020202;
-  //   --secondary-bg-color: #1F1F1F;
-  //   --overlay-color:      0, 0, 0;
-  // }
+  @media (prefers-color-scheme: dark) {
+    --secondary-color:    #999999;
+    --font-color:         #D8D8D8;
+    --background-color:   #081416;
+    --secondary-bg-color: #10272B;
+  }
 }
 
 html, body {
