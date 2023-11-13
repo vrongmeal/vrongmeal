@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start:eleventy & npm run start:webpack",
+    "start": "bun run start:eleventy & bun run start:webpack",
     "start:eleventy": "eleventy --serve",
     "start:webpack": "webpack --mode development --watch",
-    "build": "npm run build:webpack && npm run build:eleventy",
+    "build": "bun run build:webpack && bun run build:eleventy",
     "build:eleventy": "ELEVENTY_PRODUCTION=true eleventy",
     "build:webpack": "webpack --mode production"
   },
