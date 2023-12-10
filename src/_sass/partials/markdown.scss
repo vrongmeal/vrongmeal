@@ -111,6 +111,11 @@
     margin-bottom: 0;
   }
 
+  iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
   // For anchor inside headings
   .header-anchor {
     text-decoration: none;

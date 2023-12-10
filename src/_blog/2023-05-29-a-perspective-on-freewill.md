@@ -38,7 +38,6 @@ What’s interesting is I used to think of bending of light as a property of
 medium of travel. Both these approaches are correct, they are simply different
 perspectives.
 
-<!-- TODO: Insert image -->
 ![Fermat's Principle]({{ '/static/blog/a-perspective-on-freewill-fermats-principle.png' | prepend: site.baseurl | replace: '//', '/' }})
 
 > A ray of light travels in a straight line from point A to point O and then
