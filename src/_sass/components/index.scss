@@ -7,12 +7,6 @@
   height: 100%;
 
   box-sizing: border-box;
-
-  border: 1.5rem solid var(--primary-color);
-
-  @media only screen and (max-width: 720px) {
-    border-width: 2vw;
-  }
 }
 
   $landing-main-footing-height: 7rem;

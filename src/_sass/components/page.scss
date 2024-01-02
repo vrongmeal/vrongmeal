@@ -161,10 +161,15 @@ main {
 //
 
 .blog-post-date {
-  font-size:   0.8rem;
-  color:       var(--secondary-color);
-  font-weight: normal;
+  font-size:     0.8rem;
+  color:         var(--secondary-color);
+  font-weight:   normal;
 }
+
+  .list-blog-date {
+    margin-bottom: 0.25rem;
+    margin-left:   0.25rem;
+  }
 
 //
 // Footer
