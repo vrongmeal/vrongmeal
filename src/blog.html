@@ -15,8 +15,8 @@ permalink: /blog/
   <a class="list-item" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
     <h3 class="list-title">
       {{ post.data.title }}
+      <span class="blog-post-date list-blog-date">{{ post.date | date: '%d %b, %Y' }}</span>
     </h3>
-    <div class="blog-post-date list-blog-date">{{ post.date | date: '%d %b, %Y' }}</div>
     <div class="list-description">{{ post.data.description }}</div>
   </a>
 {% endfor %}
