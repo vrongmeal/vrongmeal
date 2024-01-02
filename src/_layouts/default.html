@@ -7,6 +7,12 @@
 
     {{ content }}
 
+
+    <script
+      type="text/javascript"
+      src="{{ '/webpack/index.min.js' | prepend: site.baseurl | replace: '//', '/' }}"
+    ></script>
+
   </body>
 
 </html>

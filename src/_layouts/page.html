@@ -21,9 +21,7 @@ layout: default
 
 </main>
 
-<footer>{{ site.footer }}</footer>
-
-<script
-  type="text/javascript"
-  src="{{ '/webpack/index.min.js' | prepend: site.baseurl | replace: '//', '/' }}"
-></script>
+<footer>
+  <div class="footer-line">Theme: <a href="#theme" id="theme">System</a></div>
+  <div>{{ site.footer }}</div>
+</footer>
