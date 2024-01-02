@@ -31,6 +31,10 @@
         font-size:   10rem;
         font-weight: bold;
 
+        text-decoration-line:      underline;
+        text-decoration-color:     var(--primary-color);
+        text-decoration-thickness: 0.5rem;
+
         @media only screen and (max-width: 720px) {
           font-size: 20vw;
         }
