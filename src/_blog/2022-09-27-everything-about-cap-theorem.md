@@ -2,7 +2,7 @@
 title: Everything you want to know about the CAP theorem
 description: >-
   What is CAP theorem, why it's confusing and how does the PACELC
-  theorem solve some of its issues
+  theorem solve some of its issues.
 
 ---
 
